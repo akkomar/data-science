@@ -14,3 +14,6 @@ https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/udacity
 1. Create datasets for training, validating and testing classifiers
 1. Randomize data - we can't feed our classifier with all A's, then all B's and so on
 1. Measure overlap between training and test data (might lead to overfitting)
+1. Train simple model using scikit-learn
+
+Result: for unsanitized data logistic regression classifier has poor accuracy (~20%)
