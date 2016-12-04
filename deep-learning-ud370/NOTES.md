@@ -18,3 +18,6 @@ https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/udacity
 1. Train simple model using scikit-learn
 
 Result: for unsanitized data logistic regression classifier has poor accuracy (~20%)
+
+### Cross-validation
+http://scikit-learn.org/stable/modules/cross_validation.html#cross-validation
