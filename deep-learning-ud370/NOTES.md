@@ -15,9 +15,21 @@ https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/udacity
 1. Create datasets for training, validating and testing classifiers
 1. Randomize data - we can't feed our classifier with all A's, then all B's and so on
 1. Measure overlap between training and test data (might lead to overfitting)
-1. Train simple model using scikit-learn
+1. Train simple model using scikit-learn - logistic regression with gradient descent
+
 
 Result: for unsanitized data logistic regression classifier has poor accuracy (~20%)
 
 ### Cross-validation
 http://scikit-learn.org/stable/modules/cross_validation.html#cross-validation
+
+### Stochastic Gradient Descent
+Gradient descent doesn't scale well. Computing loss function between iterations is costly - it depends on every single element in the training set. **Stochastic gradient descent** is solution - it involves computing an estimate of the loss function - average loss for a very small random fraction of the training data. Each iteration will be cheaper to compute, but we'd need to make more of them - on balance, though, we win, doing this is more efficient than gradient descent.
+
+Very important for SGD:
+* inputs with 0 mean and equal, small variance
+* random weights with 0 mean and equal, small variance
+* when doing step-by step modifications of the weights, we can keep track of running average of the gradients and use it instead of the direction calculated from the current batch of the data - **Momentum technique** (we're keeping track of the average direction from previous steps)
+* **Learning Rate Decay** - decrease steps over time
+
+Lots of "magic" - many hyperparameters affecting learning rate
