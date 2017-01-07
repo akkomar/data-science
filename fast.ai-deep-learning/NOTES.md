@@ -2,6 +2,9 @@
 http://course.fast.ai/start.html
 * Git repo for the course (clone here, gitignored):
 https://github.com/fastai/courses.git
+* wiki:
+http://wiki.fast.ai/index.php/Main_Page
+
 
 
 ## Setup
@@ -10,6 +13,15 @@ https://github.com/fastai/courses.git
 1. Ssh into created instance and run `nvidia-smi` (checks if nvidia driver is running).
 1. Delete .bash_history `sudo rm .bash_history` (has wrong permissions)
 1. Run Jupyter notebook: `jupyter notebook` (default pass: dl_course)
+1. Automation:
+    * `source setup/aws-alias.sh`
+    * `aws-get-p2`
+    * `aws-ip`
+    * `aws-start`
+    * `aws-ssh`
+    * `aws-stop`
+    * Download training data and notebooks: `setup/setup-data.sh`
+
 
 ## Jupyter tips
 * `??FUNCIOTN_NAME` - displays function's documentation and implementation
