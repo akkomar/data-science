@@ -31,7 +31,8 @@ http://wiki.fast.ai/index.php/Main_Page
 # Lesson 1
 * Neural networks are universal approximation machines (see universal approximation theorem - nonlinear function approximated by NN is capable of handling any problem we throw at it)
 * gradient descent + backpropagation - fitting function's parameters
-*
+* learning pre-trained model = fine-tuning
+* 
 
 Qs:
 * deep learning uses single precision arithmetic - why? (possible answer: https://arxiv.org/pdf/1412.7024.pdf)
