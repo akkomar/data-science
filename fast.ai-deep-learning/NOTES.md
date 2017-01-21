@@ -12,6 +12,7 @@ http://wiki.fast.ai/index.php/Main_Page
 1. Create instance on AWS:
     * `fast.ai-courses/setup/setup_t2.sh` or
     * `fast.ai-courses/setup/setup_p2.sh`
+1. Use exports from `fast-ai-commands.txt`
 1. Ssh into created instance and run `nvidia-smi` (checks if nvidia driver is running).
 1. Delete .bash_history `sudo rm .bash_history` (has wrong permissions)
 1. Run Jupyter notebook: `jupyter notebook` (default pass: dl_course)
