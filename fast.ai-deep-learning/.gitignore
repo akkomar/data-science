@@ -1,3 +1,5 @@
 aws-instance-data.txt
 fast-ai-commands.txt
 fast-ai-remove.sh
+notebooks/__pycache__
+notebooks/.ipynb_checkpoints

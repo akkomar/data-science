@@ -13,6 +13,8 @@ http://wiki.fast.ai/index.php/Main_Page
     * `fast.ai-courses/setup/setup_t2.sh` or
     * `fast.ai-courses/setup/setup_p2.sh`
 1. Use exports from `fast-ai-commands.txt`
+1. Upload notebooks: `setup/push_notebooks_to_aws.sh` (pull notebooks back: `setup/pull_notebooks_to_aws.sh`)
+1. Download test data ('dogscats') to aws instance: 'setup/setup_data.sh'
 1. Ssh into created instance and run `nvidia-smi` (checks if nvidia driver is running).
 1. Delete .bash_history `sudo rm .bash_history` (has wrong permissions)
 1. Run Jupyter notebook: `jupyter notebook` (default pass: dl_course)
